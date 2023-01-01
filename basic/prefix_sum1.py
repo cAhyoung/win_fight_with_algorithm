@@ -27,5 +27,3 @@ for i in range(q):  # 주어진 구간의 구간 합을 구하는 과정
             print(prefix_arr[k-1] - prefix_arr[j-2])
     else:
         print(arr[j-1])
-
-    # print(prefix_arr[j] - prefix_arr[k-1])  -> 해당 코드만 이용하는 경우 제대로 답이 나오지 않음
