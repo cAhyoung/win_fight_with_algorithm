@@ -71,7 +71,7 @@ Do it! 코딩테스트 - 기초편의 문제들을 풀며 작성한 코드들을
       input = sys.stdin.readline
       suNo, quizNo = map(int, input().split())
       numbers = list(map(int, input().split()))
-      prefix_sum = [0]
+      prefix_sum = [0]  # 0부터 시작함으로써 리스트 뒤로 돌아가는 경우가 발생해도 괜찮게 해줌
       temp = 0
       
       for i in numbers:
