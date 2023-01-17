@@ -82,3 +82,11 @@ Do it! 코딩테스트 - 기초편의 문제들을 풀며 작성한 코드들을
         print(prefix_sum[e] - prefix_sum[s-1])
       
      ```
+3. Two Pointer
+    * 두개의 포인터를 이용해 시간복잡도 최적화
+    * 두개의 점 위치를 기록하면서 처리함
+    * 투포인터 이동 원칙
+        - 조건: sum은 합, N은 주어진 수
+        - sum > N : sum = sum - start_index ; start_index ++ ;
+        - sum < N : end_index ++ ; sum = sum + end_index;
+        - sum == N : end_index ++ ; sum = sum + end_index; count++;
